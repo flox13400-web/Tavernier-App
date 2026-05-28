@@ -1,0 +1,26 @@
+{
+  "name": "L'Antre 2 Lames - Caisse",
+  "short_name": "Antre 2 Lames",
+  "description": "Logiciel de caisse tactile médiéval pour L'Antre 2 Lames",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0e0b08",
+  "theme_color": "#1a1410",
+  "orientation": "any",
+  "lang": "fr",
+  "categories": ["business", "utilities"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
