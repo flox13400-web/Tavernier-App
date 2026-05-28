@@ -420,7 +420,7 @@
             });
             const panel = document.getElementById(`tab-${tabId}-panel`);
             panel.classList.remove('hidden');
-            if (tabId === 'panier') panel.classList.add('flex');
+            if (tabId === 'panier' || tabId === 'carte') panel.classList.add('flex');
             const nav = document.getElementById(`nav-${tabId}`);
             if (nav) nav.className = "flex flex-col items-center gap-1.5 text-medieval-gold relative py-1";
         }
