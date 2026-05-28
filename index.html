@@ -45,7 +45,7 @@
     <style>
         .medieval-font { font-family: 'Cinzel', 'Georgia', serif; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; overscroll-behavior: contain; }
         html, body {
             overscroll-behavior-y: contain;
             height: 100%; width: 100%;
@@ -201,36 +201,6 @@
                 </button>
             </div>
 
-            <div class="bg-gradient-to-r from-amber-950/30 to-amber-900/20 p-4 rounded-xl border border-amber-800/40 space-y-3">
-                <h3 class="medieval-font text-sm font-bold text-medieval-gold">📱 Installation sur Mobile</h3>
-                <p class="text-xs text-stone-400 leading-relaxed">
-                    <strong class="text-stone-300">iOS (Safari) :</strong> Appuyez sur le bouton "Partager" puis "Sur l'écran d'accueil".<br>
-                    <strong class="text-stone-300">Android (Chrome) :</strong> Menu ⋮ → "Ajouter à l'écran d'accueil" ou bannière d'installation automatique.
-                </p>
-                <p class="text-xs text-stone-400 leading-relaxed">
-                    L'application fonctionne entièrement <strong class="text-stone-300">hors-ligne</strong> une fois installée. Vous pouvez aussi télécharger le fichier HTML pour le partager.
-                </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-                    <button onclick="copySelfContainedAppToClipboard()" class="w-full bg-medieval-accent hover:bg-medieval-accentHover text-white font-bold text-xs py-3.5 rounded-lg transition-all shadow-md flex items-center justify-center gap-2">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
-                        <span>COPIER LE CODE</span>
-                    </button>
-                    <button onclick="exportSelfContainedApp()" class="w-full bg-stone-900 hover:bg-stone-800 text-stone-300 border border-stone-700 font-bold text-xs py-3.5 rounded-lg transition-all shadow-sm flex items-center justify-center gap-2">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                        <span>TÉLÉCHARGER HTML</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-medieval-panel rounded-xl p-4 border border-stone-800/80 text-xs text-stone-400 space-y-2">
-                <p>💡 <strong class="text-stone-300">Sans serveur local (iPhone/Android) :</strong></p>
-                <ol class="list-decimal pl-4 space-y-1 text-[11px]">
-                    <li>Cliquez sur <strong class="text-medieval-gold">"COPIER LE CODE"</strong>.</li>
-                    <li>Ouvrez l'app <strong>Notes</strong> ou un éditeur de texte sur votre téléphone.</li>
-                    <li>Collez le contenu et enregistrez sous le nom <code class="bg-stone-950 px-1 py-0.5 rounded text-stone-300">index.html</code>.</li>
-                    <li>Ouvrez ce fichier dans Safari ou Chrome. L'app est autonome et ne nécessite pas Internet.</li>
-                </ol>
-            </div>
         </section>
 
     </main>
